@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* font  */
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Space Mono', monospace; */
+/* font  */
+h2 {
+  font-size: 24px;
+  font-family: "Inconsolata", monospace;
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.content-container {
+  margin-top: 50px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* row-gap: 20px; */
+  column-gap: 50px;
+  /* background-color: gold; */
+}
+.contain-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain-img img {
+  width: 100%;
+  /* background-color: red; */
+}
+.contain-info h1 {
+  color: var(--gray-1, #333);
+  font-family: "Space Mono", monospace;
+
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.24px;
+}
+.contain-info p {
+  color: var(--gray-2, #4f4f4f);
+  font-family: "Space Mono", monospace;
+
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+.main {
+  /* display: flex;
+  align-self: center;
+  justify-content: center; */
+  display: grid;
+  row-gap: 50px;
+}
+.contain-info button {
+  width: 216px;
+  height: 68px;
+  flex-shrink: 0;
+  background: var(--gray-1, #333);
+  color: #fff;
+  font-family: "Space Mono", monospace;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.49px;
+  text-transform: uppercase;
+}
+.fotter {
+  margin-top: 50px;
+  text-align: center;
+}
+.fotter P {
+  color: #bdbdbd;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.fotter P b {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+/* responsive css  */
+@media screen and (max-width: 576px) {
+  .content-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contain-info h1 {
+    font-size: 48px;
+
+    letter-spacing: -1.68px;
+  }
+  .contain-info p {
+    font-size: 26px;
+  }
+}
