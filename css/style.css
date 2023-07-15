@@ -114,7 +114,7 @@ h2 {
 }
 
 /* responsive css  */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .content-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -126,4 +126,7 @@ h2 {
   .contain-info p {
     font-size: 26px;
   }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768) {
 }
